@@ -1,0 +1,50 @@
+﻿
+    #slider ul,li
+    {
+        padding:0;
+        margin:0;
+        list-style:none
+        }
+    #slider
+    {
+        overflow:hidden;
+        width:596px;
+        height:267px;
+        margin:0 auto;
+        float:left; 
+        position:absolute;
+        background:#eee;
+        padding:1px;
+        border:2px solid #ddd;
+        margin-left:3px;
+        }
+    #slider ul#resim li a img
+    {
+        width:596px;
+        height:267px
+     }
+    #slider ul#buton 
+    {
+        position:absolute;
+        bottom:10px;
+        left:10px 
+        }
+    #slider ul#buton li
+    {
+        float:left 
+        }
+    #slider ul#buton li a
+    {
+        display:block;
+        padding:3px 6px;
+        color:White;
+        margin-right:5px
+        }
+    #slider ul#buton li.aktif a 
+    {
+        background:orange; 
+        border-radius:5px;
+        -webkit-border-radius:5px;
+        -moz-border-radius:5px
+        }
+    

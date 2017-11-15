@@ -1,0 +1,162 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="WebApplication15.MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <link href="CSS/SolMenu.css" rel="stylesheet" type="text/css" />
+    <link href="menu_assets/styles.css" rel="stylesheet" type="text/css" />
+    <link href="CSS/stiller.css" rel="stylesheet" type="text/css" />
+
+       <%-- <meta http-equiv="Content-Language" content="tr">
+		<title></title>
+		<meta http-equiv="Content-Type" content="text/html; charset=windows-1254">
+		<meta name="description" content="Ataköyda günlük kiralık ev Ataköy taksim beşiktaş balat haliç topkapı fatih ataköy">
+		<meta name="keywords" content="günlük kiralık ev Ataköyda, günlük ev, Ataköy günlük ev, istanbulda haliç kongre fuar yakını, Ataköy de daireler, beyoğlu, daire">
+		<meta http-equiv="Copyright" content="Copyright © 2010 istanbulda günlük kiralık ev" />--%>
+    <style>
+        body{font-family:Arial;margin: 0;
+padding: 0;
+background: #F7F7F7;background: rgba(247, 247, 247, 0.42);}
+        .menulerlink{font-size:12px;text-decoration:none;color:darkCyan}
+        .altmenulerlink{margin-left:5px;padding-left:5px;border-left:1px dotted #c4c4c4;font-size:12px;text-decoration:none;color:darkCyan}
+        .altinaltimenulerlink {margin-left:5px;padding-left:15px;border-left:1px dotted #c4c4c4;font-size:12px;text-decoration:none;color:darkCyan}
+        .altinaltinaltimenulerlink {margin-left:5px;padding-left:20px;border-left:1px dotted #c4c4c4;font-size:12px;text-decoration:none;color:darkCyan}
+
+        .altmenulerlink:hover{text-decoration:underline}
+        .menulerlink:hover{text-decoration:underline}
+.main{width: 979px;margin:0 auto;
+background: #F3F3F3;
+border: solid 1px #D6D6D6;border-top:none;}
+.r-ok-s{font-size:8px}
+        .txt
+        {
+            width: 111px;
+        }
+        .etiketler
+        {
+            padding-top:30px;
+            color:Blue;
+            }
+            .etiketler a:hover
+            
+            {text-decoration:underline;
+             color:Red;
+             }
+             .etiketler a{padding-left:3px;
+                          }
+    </style>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script language="javascript" type="text/javascript">
+// <![CDATA[
+
+        function Button1_onclick() {
+
+        }
+
+// ]]>
+    </script>
+</head>
+<body  style="margin:0;padding:0">
+    <form id="form1" runat="server">
+    <div class="main" >
+     <div style="text-transform:uppercase; padding:5px 0 5px 0;border:solid 3px  white;background:red;z-index:90;font-size:14pt;text-align:center; padding:10px;color:white;left:240px; top: 4px; width: 945px;">
+         <asp:Literal ID="Literal1" runat="server"></asp:Literal></div>
+         
+    <div class="head" style="width:1080px">
+        <div style="height:150px;width:1080px;overflow:hidden;padding-left:15px;">
+           <asp:Repeater ID="Repeater2" runat="server" >
+                <ItemTemplate>
+                    <td>
+                        <tr>
+                            <image width="187px" height="150px"  src='images/<%#Eval("ad") %>'></image>
+                        </tr>
+                    </td>
+                </ItemTemplate>
+
+            </asp:Repeater>
+        </div>
+    </div>
+    <div class="contents">
+        <div class="menuler" 
+            style="width:200px;border-right:1px dotted gray;line-height:20px;float:left; ">
+            <div class="yerara" style="padding:5px">
+                <asp:Panel ID="Panel1" runat="server" DefaultButton="Button1">
+                <asp:TextBox ID="TextBox1" class="txt" runat="server"></asp:TextBox>
+                <asp:Button ID="Button1" runat="server" Text="Ara" style="padding:3px 4px 3px 4px" />
+                </asp:Panel>
+            </div>
+            <a href="Default.aspx"><img border="0" src="home.png" alt="home" /></a><br />
+           
+           
+            <div id='cssmenu'>
+    <asp:Repeater ID="Repeater1" runat="server">
+        <HeaderTemplate>
+            <%-- <div class="title_box">Ana Sayfa</div>--%>
+        </HeaderTemplate>
+        <ItemTemplate>
+            <ul>
+                <li class="active ">
+                    <a href="<%#menuSeo(Eval("kod").ToString() ,Eval("tip").ToString(),Eval("ad").ToString()) %>"><span><%#Eval("alan1")%></span></a>
+                </li>
+            </ul>
+        </ItemTemplate>
+    </asp:Repeater>
+</div>
+
+        
+
+
+             
+        </div>
+        <div >
+        <div class="icerihimiz" 
+            style="min-height:300px;float:left;width:600px; padding:10px">
+           
+            <asp:Literal ID="Literal2" runat="server"></asp:Literal>
+            <br />
+            <asp:Literal ID="Literal3" runat="server"></asp:Literal>
+            
+        </div>
+        <div class="etiketler" >
+            
+            <asp:Repeater ID="rptEtiket" runat="server">
+                <ItemTemplate>
+                
+                    <a class="style48" href="<%#urlSeo(Eval("etiket").ToString(),Eval("id").ToString()) %>"><%#Eval("etiket") %></a>
+                  
+                </ItemTemplate>
+            </asp:Repeater>
+        
+        </div>
+        </div>
+        <div style="clear:both"></div>
+        
+    </div>
+    <div class="foot" >
+        
+    </div>
+</div>
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+   <!-- Sayyac counter START v4.3 -->
+<script type="text/javascript">
+<!--
+    document.write(unescape("%3Cscript src='" + (("https:" == document.location.protocol) ? "https://" : "http://")
+ + "srv.sayyac.net/sa.js?_salogin=yeniseoe&_sav=4.3' type='text/javascript'%3E%3C/script%3E"));
+//-->
+</script>
+<script type="text/javascript">
+<!--
+    sayyac.track('yeniseoe', 'srv.sayyac.net');
+//-->
+</script>
+<noscript><a href="http://www.sayyac.com/" title=""><img src="http://srv.sayyac.net/sa.gif?_salogin=yeniseoe&amp;_sav=4.3" border="0" alt="" /></a></noscript>
+<!-- Sayyac counter END v4.3 --> 
+</body>
+</html>

@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebApplication15.Site1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+    <link href="../CSS/stiller.css" rel="stylesheet" type="text/css" />
+<style>
+body{font-size:18px;font-family:Arial;background:#c4c4c4}
+
+.menus{padding:6px;background:white;border-bottom: 1px dotted #999;}
+
+.menus a{display:block;padding:5px;color:Gray;float:left;margin-right:20px;text-decoration:none;}
+
+.menus a:hover{color:black;text-decoration:underline}
+
+</style>
+
+
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    
+    <div style="margin:0 auto;width:1100px;">
+        <div class="menus" >
+            <a href="default.aspx">İçerik</a> <a href="anahtarlar.aspx">Anahtar Kelimeler</a> <a href="menuler.aspx" >Menü Dizeleri</a><a href="Resimler.aspx" >Resim Ekle/Sil</a><a href="etiketler.aspx" >Etiketler</a><a href="maps.aspx" >Maps</a>
+            <div style="clear:both"></div>
+        </div>
+        <div style="background:#f1f1f1">
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            </asp:ContentPlaceHolder>
+        </div>
+     </div>
+
+    </form>
+</body>
+</html>

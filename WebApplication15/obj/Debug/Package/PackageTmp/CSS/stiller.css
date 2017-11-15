@@ -1,0 +1,101 @@
+﻿body {
+}
+.style1 {
+	font-size: 24;
+	font-weight: bold;
+	font-style: italic;
+}
+.style2 {
+	font-size: 17px;
+	font-weight: bold;
+	color: #CC6600;
+}
+.style3 {color: #FF3300}
+.style6 {
+	font-style: italic;
+	font-weight: bold;
+}
+.style7 {
+	font-size: 16px;
+	font-weight: bold;
+	font-style: italic;
+	color: #FF6600;
+}
+.style9 {font-size: 16}
+.style10 {font-size: 18px}
+.style11 {font-size: 18}
+.style12 {font-size: 14px}
+.style13 {font-size: 16px}
+.style16 {font-size: 16px; font-weight: bold; color: #009900; }
+.style19 {font-size: 18; color: #339900; }
+.style20 {color: #009999}
+.style23 {
+	color: #996600;
+	font-weight: bold;
+}
+.style26 {color: #996666}
+.style27 {
+	color: #009900;
+	font-style: italic;
+	font-weight: bold;
+}
+.style30 {
+	color: #006666;
+	font-style: italic;
+	font-weight: bold;
+}
+.style38 {
+	font-size: 33px;
+	color: #006666;
+}
+.style39 {
+	font-size: 28px;
+	color: #009900;
+}
+.style40 {color: #009933}
+.style41 {color: #006666}
+.style43 {color: #FF3300; font-style: italic; }
+.style44 {color: #006600}
+.style45 {color: #339900}
+.style46 {font-size: 33px; color: #009999; }
+.style47 {color: #006633}
+.style48 {color: #993300}
+.style49 {color: #663366; }
+.style51 {color: #336666; font-weight: bold; }
+a:link {
+	color: #996633;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #333333;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+.style52 {color: #990000}
+.style54 {color: #006699; font-size: 18px; }
+.style55 {color: #993300; font-size: 16px; }
+.style56 {font-size: 12px; }
+.style57 {color: #006699}
+.style58 {font-size: 12px; color: #990000; }
+.style61 {color: #333333}
+.style62 {color: #006600; font-style: italic; }
+.style63 {color: #006600; font-style: italic; font-weight: bold; }
+.style64 {font-size: 20px; color: #006666; font-weight: bold; }
+.style65 {font-size: 14px; color: #006666; font-weight: bold; }
+.style66 {color: #CC3333}
+.style67 {color: #996600}
+.style68 {font-size: 19px}
+.style69 {font-weight: bold}
+.style70 {font-size: 20px}
+.style71 {color: #336666; font-weight: bold; font-size: 24px; }
+.style72 {color: #CC9900}
+.style73 {color: #FFCC00}
+.style74 {color: #336699}
+.style75 {color: #009966}
+.style76 {color: #CC6600}
+.style77 {color: #669900}
